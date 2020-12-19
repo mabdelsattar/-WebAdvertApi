@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/AdvertAPI/bin/Debug/netcoreapp3.0
+/AdvertAPI/.vs/AdvertAPI/v16
+/AdvertAPI/obj
+/AdvertAPI.Models/bin/Debug
+/AdvertAPI.Models/obj
