@@ -37,6 +37,18 @@ namespace AdvertAPI.Sevices
 
         }
 
+        public async Task<bool> CheckHealthAsync()
+        {
+            using (var client = new AmazonDynamoDBClient())
+            {
+                var tableData = await client.DescribeTableAsync("Adverts");
+                // if(tableData.Table.TableStatus  == "Active")
+                //Or
+                return string.Compare(tableData.Table.TableStatus, "active", true) == 0;
+            }
+
+        }
+
         public async Task Confirm(ConfirmAdvertModel model)
         {
             //now we need to store it into the DB 

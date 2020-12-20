@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <Product>Web Advert Microservices</Product>
+    <PackageProjectUrl>https://github.com/mabdelsattar/-WebAdvertApi</PackageProjectUrl>
+    <PackageId>AbdelSattarAdvertAPI.Models</PackageId>
   </PropertyGroup>
 
 </Project>
